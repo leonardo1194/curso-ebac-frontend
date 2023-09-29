@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Cadastrar Usuário</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TechCode Innovations</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" id="selecionado">Cadastrar</a></li>
+                    <li><a href="#">Agenda</a></li>
+                    <li><a href="#">Meu Perfil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form id="form-cadastro">
+                <h2>Cadastrar Usuário</h2>
+                <div class="form-campo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" class="inputs" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Número de telefone:</label>
+                    <input type="tel" class="inputs" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" class="inputs" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="tel" class="inputs" id="cpf" name="cpf">
+                </div>
+                <div class="form-campo">
+                    <label for="cep">CEP:</label>
+                    <input type="tel" class="inputs" id="cep" name="cep">
+                </div>
+                <div class="form-campo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" class="inputs" id="endereco" name="endereco">
+                </div>
+                <div class="botoes">
+                    <button type="submit" class="botao positivo">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_pt_BR.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

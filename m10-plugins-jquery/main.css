@@ -1,0 +1,124 @@
+/*   RESET E BÁSICOS   */
+:root {
+    --azul: #007F99;
+    --laranja: #ff7f00;
+    --jade: #00a86b;
+    --vermelho: #a80037;
+    --branco-fumaca: #f5f5f5;
+    --prata: #cfcfcf;
+    --quantum: #111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--branco-fumaca);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: var(--azul);
+    width: 100%;
+    color: var(--branco-fumaca);
+}
+
+header li {
+    display: inline;
+    padding-left: 24px;
+    text-transform: uppercase;
+}
+
+header h1 {
+    padding: 8px 0;
+}
+
+header a {
+    text-decoration: none;
+    padding: 4px;
+    color: var(--branco-fumaca);
+    border-radius: 2px;
+}
+
+header a:focus {          
+    outline: 1px solid var(--prata);   
+}
+
+header a:hover,
+#selecionado {
+    border-bottom: 3px solid var(--laranja);
+}
+
+.botao {
+    margin-top: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    color: var(--branco-fumaca);
+    background-color: var(--quantum);
+}
+
+.botoes {
+    text-align: end;
+}
+
+.positivo {
+    background-color: var(--jade);
+}
+
+.negativo {
+    background-color: var(--vermelho);
+}
+
+.inputs {
+    padding: 8px;
+    border: 1px solid var(--prata);
+    border-radius: 2px;
+    color: var(--quantum);
+}
+
+form .container {
+    max-width: 800px;
+}
+
+form {
+    margin: 64px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.form-campo {
+    width: 360px;
+    margin-bottom: 16px;
+}
+
+.form-campo label,
+.form-campo input {
+    display: block;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+label.error {
+    color: red;
+    font-size: 12px;
+}
