@@ -1,0 +1,63 @@
+// Variáveis
+
+@corFundo: rgb(170, 169, 169);
+@corTexto: #fff;
+@fontePrincipal: Roboto, sans-serif;
+@fonteTitulo: Lobster, cursive;
+@corBotao: #f7b731;
+
+body {
+    background-color: @corFundo;
+    font-family: @fontePrincipal;
+    color: @corTexto;
+}
+
+h1 {
+    font-family: @fonteTitulo;
+    font-size: 3em;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+button {
+    background-color: @corBotao;
+    padding: 16px;
+    margin-top: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #000;
+    font-family: @fontePrincipal;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+input {
+    display: block;
+    background-color: transparent;
+    margin: 16px auto 0;
+    max-width: 120px;
+    border: none;
+    border-bottom: 4px solid #fff;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+.resultado {
+    display: none;
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted #fff;
+
+    span {
+        display: block;
+        font-weight: bold;
+        font-size: 3em;
+    }
+}
